@@ -1,0 +1,48 @@
+body{
+    background-color: #313131;
+    color: #848484;
+    font-family: Arial,Helvetica,Verdana,"Lucida Grande",sans-serif;
+}
+
+#container{
+    margin-top: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+    background: url(http://img.sedoparking.com/templates/bg/arrows-1-colors-3.png) no-repeat center top;
+    background-size: 100%;
+}
+
+h1{
+    font-size: 2em;
+    margin: 0.67em, 0;
+    font-weight: 800;
+}
+
+#ad{
+
+    margin-top: 200px;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+a{
+    text-decoration: none;
+    background-color: white;
+}
+
+img{
+    background-color: white;
+}
+
+.ads{
+    margin: 13px;
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+
+
+
