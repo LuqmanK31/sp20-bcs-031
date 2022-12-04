@@ -35,7 +35,7 @@ padding: 0%;
 
 #login li{
     display: inline;
-    float: left
+    float: right;
 }
 
 #login ul li a{
@@ -150,7 +150,6 @@ div .navbar{
 
 #leftnavbar{
     display: flex;
-    flex: 4;
     align-items: center;
     padding: 0px 0px 0px 56.48px;
 }
@@ -171,7 +170,7 @@ div .navbar{
 
 #rightnavbar{
     display: flex;
-    flex: 4;
+    float: right;
     align-items: center;
     padding: 0px 0px 0px 56.48px;
 }
@@ -199,7 +198,6 @@ input[type=search]{
     display: flex;
     margin-top: 100px;
     position: relative;
-
 }
 
 
