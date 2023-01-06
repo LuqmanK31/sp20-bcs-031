@@ -1,0 +1,320 @@
+body{
+    color: black;
+    background-color: white;
+    font-size: 16px;
+    font-family: Helvetica,Arial,sans-serif;
+    margin: 0%;
+    padding: 0%;
+    line-height: 24px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+
+#headerbar{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+	position: fixed;
+	top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    line-height: 24px;
+    text-align: left;
+    background-color: #fff;
+}
+
+#login ul{margin: 0%;
+padding: 0%;
+}
+#login ul li{
+    margin: 0;
+    padding: 0;
+}
+
+#login li{
+    display: inline;
+    float: right;
+    min-width: 10px;
+}
+
+#login ul li a{
+    display: block;
+    padding: 8px;
+}
+
+.navbar ul{margin: 0%;
+    padding: 0%;
+    }
+.navbar ul li{
+        margin: 0;
+        padding: 0;
+    }
+    
+.navbar li{
+        display: inline;
+        float: left
+}
+    
+.navbar ul li a{
+        display: block;
+        padding: 8px;
+    }
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+div .utility_bar {
+    height: 40px;
+    font-size: 12px;
+    font-weight: 400;
+    display: flex;
+    flex-basis: auto;
+    flex-direction: row;
+    border-bottom: solid 1px rgba(0,0,0,.2);
+    box-sizing: border-box;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    position: relative;
+    text-align: left;
+}
+
+div .utility_bar #slider{
+    flex:70%;
+    height: 40px;
+}
+div .utility_bar #login{
+    flex:30%;
+}
+
+.item-1,.item-2,.item-3{
+    white-space: normal;
+    font-size: 12px;
+    font-weight: 400;
+    position: absolute;
+    display: block;
+    animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.item-1{
+	animation-name: anim-1;
+}
+
+.item-2{
+	animation-name: anim-2;
+}
+
+.item-3{
+	animation-name: anim-3;
+}
+
+@keyframes anim-1 {
+    0%, 8.3% { left: -45%; opacity: 0; }
+  8.3%,25% { left: 25%; opacity: 1; }
+  33.33%, 100% { left: 45%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { left: -45%; opacity: 0; }
+  41.63%, 58.29% { left: 25%; opacity: 1; }
+  66.66%, 100% { left: 45%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 66.66% { left: -45%; opacity: 0; }
+  74.96%, 91.62% { left: 25%; opacity: 1; }
+  100% { left: 45%; opacity: 0; }
+}
+div .navbar{
+    height: 60px;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    flex:10;
+    flex-basis: auto;
+    flex-direction: row;
+    box-sizing: border-box;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    position: relative;
+    text-align: left;
+    line-height: 24px;
+}
+
+#leftnavbar{
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 56.48px;
+}
+
+#leftnavbar ul li a:hover{
+    border-bottom: 1px solid;
+}
+
+#logo{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 2;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#rightnavbar{
+    display: flex;
+    float: right;
+    align-items: center;
+    padding: 0px 0px 0px 56.48px;
+}
+
+input[type=search]{
+    font-size: 14px;
+    padding: 8px 32px 8px 36px;
+    border: none;
+    text-align: left; 
+}
+
+#searchbox{
+    flex-direction: row;
+    display: flex;
+}
+#shop ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    flex-wrap: wrap ;
+}
+
+
+#newArrivals{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: InterstateWGL-Black;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 900;
+    letter-spacing: .02em;
+}
+
+#newArrivals h2{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+
+.items{
+display: flex;
+justify-content: center;
+align-content: flex-start;
+flex-wrap: wrap;
+flex-direction: column;
+    border: 1px solid grey;
+    text-align: center;
+}
+.products{
+    display: block;
+    float: left;
+
+}
+
+.price .linethrough{ 
+    text-decoration: line-through;
+}
+
+.price span{ 
+    padding-right: 6px;
+    font-weight: 600;
+    text-align: left;
+    letter-spacing: .02em;
+}
+
+.info {
+    margin-top: 2px;
+    max-width: 300px;
+}
+
+
+.footer{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    background-color: rgb(243, 243, 243);
+    justify-content: center;
+}
+
+.footerContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footerSection{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 60px;
+}
+
+.listItems ul{
+    list-style-type: none;
+    font-size: 14px;
+    color: #6e6e6e;
+    margin: 0;
+    padding: 0;
+}
+.hd{
+    font-size: 16px;
+}
+
+.image{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.button{
+    color: white;
+    /* background-color: black; */
+}
+
+.button-add\>.\<a.href\= {
+    background: black;
+    width: 130px;
+    color: white;
+    padding: 10px;
+}
+
+.product-add-btn {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.show-all-products {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 120px;
+}
+
+.button a {
+    align-items: center;
+    /* width: 100px; */
+    background: black;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+}

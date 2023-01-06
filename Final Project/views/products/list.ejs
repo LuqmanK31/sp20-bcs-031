@@ -1,0 +1,30 @@
+<div class="add-product">
+  <div class="product-add-btn">
+    <div class="button-add">
+      <a href="/products/add">Add New Product</a>
+    </div>
+  </div>
+  <!-- How the games array will be available here -->
+  <div class="show-all-products">
+    <% for( let index = 0; index < products.length; index++ ) { %>
+    <div class="items">
+      <div class="products">
+        <div><img class="image" src="<%=products[index].image%>" /></div>
+        <h3><%=products[index].title%></h3>
+        <div class="info">
+          <span><%= products[index].description %></span>
+        </div>
+        <div class="price"><span>Price:<%= products[index].price %></span></div>
+      </div>
+
+      <div class="button">
+        <a href="/products/delete/<%=products[index]._id %>">Delete</a>
+      </div>
+      <div class="button">
+        <a href="/products/edit/<%=products[index]._id %>">Edit</a>
+      </div>
+    </div>
+    <!-- </div> -->
+    <% } %>
+  </div>
+</div>
