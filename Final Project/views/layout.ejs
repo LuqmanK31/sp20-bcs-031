@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jeans, Denim Jackets & Clothing | Levi's Official Site</title>
+    <title>Karim Lala</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="shortcut icon" href="/favicon.ico" />
     <script
@@ -32,8 +32,12 @@
         </div>
         <div id="login">
           <ul>
-            <li><a href="Login.html">Log In</a></li>
-            <li><a href="SignUp.html">Sign Up</a></li>
+            <% if (!user) { %>
+            <li><a href="/login">Log In</a></li>
+            <li><a href="/register">Register</a></li>
+            <% } %> <% if (user) { %>
+            <li><a href="/logout">Log Out</a></li>
+            <% } %>
           </ul>
         </div>
       </div>
@@ -76,7 +80,7 @@
               </li>
               <li>
                 <div id="bag" class="icons">
-                  <a href="empty.html">
+                  <a href="/cart">
                     <i class="fa-solid fa-bag-shopping fa-2x"></i>
                   </a>
                 </div>
@@ -86,7 +90,7 @@
         </div>
       </div>
     </div>
-    <div style="max-width: 80%; margin: 100px auto 0px"><%-body %></div>
+    <div style="max-width: 80%; margin: 120px auto 0px"><%-body %></div>
 
     <div class="footer">
       <div class="footerContainer">

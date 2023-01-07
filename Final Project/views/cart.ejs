@@ -1,0 +1,37 @@
+<% var total = 0 %>
+
+<table>
+  <thead>
+    <th>Product</th>
+    <th>Price</th>
+  </thead>
+  <tbody>
+    <% for( let index = 0; index < cart.length; index++ ) { %>
+    <%total+=Number(cart[index].price) %>
+
+    <tr>
+      <td><%=cart[index].title%></td>
+      <td><%=cart[index].price %></td>
+      <td>
+        <a
+          href="/products/cart/remove/<%=cart[index]._id %> "
+          style="
+            align-items: center;
+            background: black;
+            display: inline-block;
+            color: white;
+          "
+          >Remove</a
+        >
+      </td>
+    </tr>
+
+    <% } %>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Total</td>
+      <td><%= total %></td>
+    </tr>
+  </tfoot>
+</table>

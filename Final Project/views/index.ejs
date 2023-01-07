@@ -10,6 +10,9 @@
       </div>
       <div class="price"><span>Price:<%= products[index].price %></span></div>
     </div>
+    <div class="button">
+      <a href="/products/cart/<%=products[index]._id %>">Add to Cart</a>
+    </div>
   </div>
   <% } %>
 </div>
