@@ -28,9 +28,12 @@ body{
 #login ul{margin: 0%;
 padding: 0%;
 }
-#login ul li{
+#login ul li {
     margin: 0;
     padding: 0;
+    min-width: 80px;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 #login li{
@@ -173,7 +176,6 @@ div .navbar{
     display: flex;
     float: right;
     align-items: center;
-    padding: 0px 0px 0px 56.48px;
 }
 
 input[type=search]{
@@ -287,14 +289,14 @@ flex-direction: column;
 }
 
 .button{
-    color: white;
-    /* background-color: black; */
+    color: rgb(243, 243, 243);;
+    
 }
 
-.button-add\>.\<a.href\= {
-    background: black;
+.button-add {
+    background: rgb(243, 243, 243);
     width: 130px;
-    color: white;
+    color: #6e6e6e;
     padding: 10px;
 }
 
@@ -316,7 +318,7 @@ flex-direction: column;
 .button a {
     align-items: center;
     /* width: 100px; */
-    background: black;
+    background: #6e6e6e;
     padding: 5px 20px;
     margin-bottom: 10px;
     display: inline-block;
